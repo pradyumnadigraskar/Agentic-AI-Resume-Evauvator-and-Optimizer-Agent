@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Optimization Results</title>
+    <link rel="stylesheet" href="/static/result.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Resume Optimization Results</h1>
+
+        <!-- ATS Scores -->
+        <div class="score-section">
+            <p><strong>Original ATS Score:</strong> {{ original_score }}%</p>
+            <p><strong>Optimized ATS Score:</strong> {{ optimized_score }}%</p>
+        </div>
+
+        <!-- Resume Comparison -->
+        <div class="resume-comparison">
+            <div class="resume-block">
+                <h3>Original Resume</h3>
+                <pre>{{ original_text }}</pre>
+            </div>
+
+            <div class="resume-block">
+                <h3>Optimized Resume</h3>
+                <pre>{{ optimized_text }}</pre>
+            </div>
+        </div>
+
+        <!-- Download Button -->
+        <div class="download-section">
+            <a href="{{ download_link }}" download>
+                <button>Download Optimized Resume</button>
+            </a>
+        </div>
+
+        <!-- Back Link -->
+        <div class="back-section">
+            <a href="/">&#8592; Back to Upload</a>
+        </div>
+    </div>
+</body>
+</html>

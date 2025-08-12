@@ -1,0 +1,41 @@
+<!-- app/templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agentic Resume Optimizer</title>
+    <link rel="stylesheet" href="/static/index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Resume Optimizer & ATS Scorer</h1>
+
+        <form action="/process/" method="post" enctype="multipart/form-data" onsubmit="showLoader()">
+    <label>Upload Resume (PDF):</label><br>
+    <input type="file" name="resume_file" required><br><br>
+
+    <label>Paste Job Description:</label><br>
+    <textarea name="job_description" rows="10" required></textarea><br><br>
+
+    <input type="submit" value="Optimize & Score">
+    <div class="loader" id="loader">
+        <div class="spinner"></div>
+        <p>Processing your resume...</p>
+    </div>
+</form>
+
+<script>
+function showLoader() {
+    document.getElementById("loader").style.display = "block";
+}
+</script>
+
+
+        
+               
+        
+       
+    </div>
+</body>
+</html>

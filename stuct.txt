@@ -1,0 +1,14 @@
+agentic_resume_optimizer/
+│
+├── app/
+│   ├── main.py                # FastAPI entry point
+│   ├── ats_score.py           # Logic for ATS score
+│   ├── resume_optimizer.py    # LLM-based optimization logic
+│   ├── ocr_utils.py           # Tesseract OCR functions
+│   └── templates/
+│       └── index.html 
+│   └── Static    
+│       └── style.css       # Frontend HTML
+│           
+│
+└── requirements.txt           # Python dependencies
