@@ -1,41 +1,44 @@
-<!-- app/templates/index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agentic Resume Optimizer</title>
+    <title>AI Resume Agent</title>
     <link rel="stylesheet" href="/static/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-        <h1>Resume Optimizer & ATS Scorer</h1>
+        <div class="header">
+            <div class="badge">AI AGENT ACTIVE</div>
+            <h1>Resume Optimizer</h1>
+            <p>Align your resume with industry standards using Gemini AI</p>
+        </div>
 
         <form action="/process/" method="post" enctype="multipart/form-data" onsubmit="showLoader()">
-    <label>Upload Resume (PDF):</label><br>
-    <input type="file" name="resume_file" required><br><br>
+            <div class="input-group">
+                <label>Upload Resume (PDF)</label>
+                <input type="file" name="resume_file" required>
+            </div>
 
-    <label>Paste Job Description:</label><br>
-    <textarea name="job_description" rows="10" required></textarea><br><br>
+            <div class="input-group">
+                <label>Job Description</label>
+                <textarea name="job_description" placeholder="Paste the target job description here..." required></textarea>
+            </div>
 
-    <input type="submit" value="Optimize & Score">
-    <div class="loader" id="loader">
-        <div class="spinner"></div>
-        <p>Processing your resume...</p>
+            <input type="submit" value="Analyze & Optimize">
+            
+            <div class="loader-wrapper" id="loader">
+                <div class="scanner"></div>
+                <p>Agent is cross-referencing keywords...</p>
+            </div>
+        </form>
     </div>
-</form>
 
-<script>
-function showLoader() {
-    document.getElementById("loader").style.display = "block";
-}
-</script>
-
-
-        
-               
-        
-       
-    </div>
+    <script>
+        function showLoader() {
+            document.getElementById("loader").style.display = "block";
+        }
+    </script>
 </body>
 </html>
