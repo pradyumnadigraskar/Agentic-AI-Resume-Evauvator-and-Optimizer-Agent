@@ -265,11 +265,12 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Support
 
-- **Issues**: [GitHub Issues](https://github.com/yourusername/agentic-resume-optimizer/issues)
-- **Email**: your.email@example.com
-- **Documentation**: [Wiki](https://github.com/yourusername/agentic-resume-optimizer/wiki)
+- **Issues**: [GitHub Issues](https://github.com/pradyumnadigraskar/agentic-resume-optimizer/issues)
+- **Email**: pradyumnadigraskar11@gmail.com
+- **Documentation**: [Wiki](https://github.com/pradyumnadigraskar/agentic-resume-optimizer/wiki)
 
 ---
+
 
 <div align="center">
 
